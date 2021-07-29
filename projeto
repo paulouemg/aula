@@ -1,0 +1,21 @@
+algoritimo
+
+var
+aux : inteiro
+serie, serie2, den, den2, num : real
+
+inicio
+// Seção de Comandos
+
+para aux de 1 ate 10000 faca
+   num <- 1
+   den <- aux*4-3
+   serie <- serie+(num/den)
+   den2 <- aux*4-1
+   serie <- serie-(num/den2)
+fimpara
+
+serie <- 4*(serie)
+escreval("O valor de PI é: ", serie)
+
+fimalgoritmo
